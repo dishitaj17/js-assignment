@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 25px; text-align: center; padding: 50px;">
+    <form action="">
+        <label for="first">Enter 1 Number:</label>
+  <input type="text" id="v1" name="first"><br>
+
+  <label for="second">Enter 2 Number:</label>
+  <input type="text" id="v2" name="second"><br><br><br>
+
+    <button type="button" onclick="Add()" style="font-size: 25px;margin-bottom: 15px;">+</button>
+    <button type="button" onclick="sub()" style="font-size: 25px;">-</button>
+    <button type="button" onclick="mod()" style="font-size: 25px;">%</button><br>
+    <button type="button" onclick="div()" style="font-size: 25px;">/</button>
+    <button type="button" onclick="mul()" style="font-size: 25px;">*</button><br><br>
+
+
+    Answer is:<input type="text" id="total">
+
+    </form>
+</body>
+</html>
+<script>
+    function Add(){
+
+        a=parseInt(document.getElementById('v1').value);
+         b=parseInt(document.getElementById('v2').value);
+
+         c=a+b;
+        document.getElementById('total').value= c;
+     }
+
+     function sub(){
+
+        a=parseInt(document.getElementById('v1').value);
+        b=parseInt(document.getElementById('v2').value);
+
+        c=a-b;
+        document.getElementById('total').value= c;
+    }
+
+    function mod(){
+
+        a=parseInt(document.getElementById('v1').value);
+        b=parseInt(document.getElementById('v2').value);
+
+        c=a%b;
+        document.getElementById('total').value= c;
+    }
+
+    function div(){
+
+        a=parseInt(document.getElementById('v1').value);
+        b=parseInt(document.getElementById('v2').value);
+
+        c=a/b;
+        document.getElementById('total').value= c;
+    }
+
+    function mul(){
+
+        a=parseInt(document.getElementById('v1').value);
+        b=parseInt(document.getElementById('v2').value);
+
+        c=a*b;
+        document.getElementById('total').value= c;
+    }
+
+
+    
+</script>
