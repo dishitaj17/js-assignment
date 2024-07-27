@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="pall()">click</button>
+</body>
+</html>
+<script>
+    function pall(){
+        var a = parseInt(prompt("enter a number"));
+        rev=0;
+        b=a;
+        while (a != 0) {
+          r = a % 10;
+          rev = rev * 10 + r;
+          a = parseInt(a / 10);
+        }
+
+        if(b==rev)
+	{
+           document.write(b+" is palindrome a number");
+	}
+	else
+	{
+	   document.write(b+" is not palindrome a number");
+	}
+    }
+</script>

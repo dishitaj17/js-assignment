@@ -1,0 +1,46 @@
+
+<!-- What are the looping structures in JavaScript? Any one Example?
+
+JavaScript supports different kinds of loops:
+
+for - loops through a block of code a number of times
+for/in - loops through the properties of an object
+for/of - loops through the values of an iterable object
+while - loops through a block of code while a specified condition is true
+do/while - also loops through a block of code while a specified condition is true
+
+a) For loop:
+
+syntex:
+
+for (expression 1; expression 2; expression 3) {
+    // code block to be executed
+  }
+
+  Expression 1 is executed (one time) before the execution of the code block.
+
+Expression 2 defines the condition for executing the code block.
+
+Expression 3 is executed (every time) after the code block has been executed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+</html>
+<script>
+    let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+

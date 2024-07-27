@@ -1,0 +1,9 @@
+<script>
+    function add(num) {
+    return num.toString().split("")
+        .reduce((sum, digit) =>
+            sum + parseInt(digit), 0);
+}
+
+console.log(add(738));
+</script>
